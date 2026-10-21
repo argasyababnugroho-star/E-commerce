@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "bun run --cwd apps/web dev",
+    "dev:api": "bun run --cwd apps/api dev",
+    "db:generate": "bun run --cwd packages/database prisma generate",
+    "db:migrate": "bun run --cwd packages/database prisma migrate dev",
+    "db:validate": "bun run --cwd packages/database prisma validate",
+    "db:studio": "bun run --cwd packages/database prisma studio"
+  }
+}
