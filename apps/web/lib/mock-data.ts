@@ -1,0 +1,131 @@
+import type { ProductDto } from "shared";
+
+/**
+ * Mock data for development / UI preview before API is ready.
+ * Semua data ini akan digantikan oleh API call nyata setelah backend selesai.
+ */
+
+export const MOCK_CATEGORIES = [
+  { id: "1", name: "Electronics", slug: "electronics", emoji: "⚡", description: "Gadgets & tech", imageUrl: null },
+  { id: "2", name: "Fashion", slug: "fashion", emoji: "👔", description: "Clothing & accessories", imageUrl: null },
+  { id: "3", name: "Home & Living", slug: "home", emoji: "🏠", description: "Furniture & decor", imageUrl: null },
+  { id: "4", name: "Sports", slug: "sports", emoji: "🏃", description: "Fitness & outdoor", imageUrl: null },
+  { id: "5", name: "Books", slug: "books", emoji: "📚", description: "Learning & entertainment", imageUrl: null },
+  { id: "6", name: "Beauty", slug: "beauty", emoji: "✨", description: "Skincare & wellness", imageUrl: null },
+];
+
+export const MOCK_PRODUCTS: ProductDto[] = [
+  {
+    id: "1",
+    name: "Wireless Noise-Cancelling Headphones Pro",
+    slug: "wireless-noise-cancelling-headphones-pro",
+    description: "Premium audio experience with 40-hour battery life and active noise cancellation.",
+    price: 2499000,
+    stock: 42,
+    sku: "ELEC-001",
+    isActive: true,
+    category: { id: "1", name: "Electronics", slug: "electronics" },
+    primaryImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    images: [{ id: "1", url: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+  {
+    id: "2",
+    name: "Smart Watch Series X — Titanium Edition",
+    slug: "smart-watch-series-x-titanium",
+    description: "Health monitoring, GPS, and 18-day battery. Water resistant to 50 meters.",
+    price: 4999000,
+    stock: 15,
+    sku: "ELEC-002",
+    isActive: true,
+    category: { id: "1", name: "Electronics", slug: "electronics" },
+    primaryImage: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    images: [{ id: "2", url: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+  {
+    id: "3",
+    name: "Minimalist Leather Sneakers",
+    slug: "minimalist-leather-sneakers",
+    description: "Handcrafted genuine leather sneakers. Timeless design meets modern comfort.",
+    price: 1299000,
+    stock: 30,
+    sku: "FASH-001",
+    isActive: true,
+    category: { id: "2", name: "Fashion", slug: "fashion" },
+    primaryImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
+    images: [{ id: "3", url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+  {
+    id: "4",
+    name: "Ergonomic Office Chair — Lumbar Support",
+    slug: "ergonomic-office-chair-lumbar",
+    description: "Breathable mesh, adjustable height, 4D armrests. 8-hour comfort guarantee.",
+    price: 3799000,
+    stock: 8,
+    sku: "HOME-001",
+    isActive: true,
+    category: { id: "3", name: "Home & Living", slug: "home" },
+    primaryImage: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=600&q=80",
+    images: [{ id: "4", url: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+  {
+    id: "5",
+    name: "4K Ultra-Wide Monitor 34\"",
+    slug: "4k-ultra-wide-monitor-34",
+    description: "34-inch curved display, 144Hz refresh rate, HDR600, USB-C 65W charging.",
+    price: 7999000,
+    stock: 5,
+    sku: "ELEC-003",
+    isActive: true,
+    category: { id: "1", name: "Electronics", slug: "electronics" },
+    primaryImage: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&q=80",
+    images: [{ id: "5", url: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+  {
+    id: "6",
+    name: "Premium Yoga Mat — Natural Cork",
+    slug: "premium-yoga-mat-natural-cork",
+    description: "Eco-friendly natural cork surface. Anti-slip, extra thick 6mm cushioning.",
+    price: 599000,
+    stock: 0,
+    sku: "SPORT-001",
+    isActive: true,
+    category: { id: "4", name: "Sports", slug: "sports" },
+    primaryImage: "https://images.unsplash.com/photo-1601925228218-48bea40bd26f?w=600&q=80",
+    images: [{ id: "6", url: "https://images.unsplash.com/photo-1601925228218-48bea40bd26f?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+  {
+    id: "7",
+    name: "Mechanical Keyboard — RGB Backlit",
+    slug: "mechanical-keyboard-rgb-backlit",
+    description: "Cherry MX Red switches, full NKRO, per-key RGB, programmable macros.",
+    price: 1899000,
+    stock: 22,
+    sku: "ELEC-004",
+    isActive: true,
+    category: { id: "1", name: "Electronics", slug: "electronics" },
+    primaryImage: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
+    images: [{ id: "7", url: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+  {
+    id: "8",
+    name: "Linen Button-Up Shirt — Summer Edition",
+    slug: "linen-button-up-shirt-summer",
+    description: "100% natural linen. Breathable, wrinkle-resistant, available in 8 colors.",
+    price: 449000,
+    stock: 60,
+    sku: "FASH-002",
+    isActive: true,
+    category: { id: "2", name: "Fashion", slug: "fashion" },
+    primaryImage: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&q=80",
+    images: [{ id: "8", url: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&q=80", isPrimary: true, sortOrder: 0 }],
+  },
+];
+
+export function formatPrice(price: number) {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(price);
+}
