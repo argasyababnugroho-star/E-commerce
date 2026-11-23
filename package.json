@@ -2,13 +2,14 @@
   "name": "ecommerce",
   "private": true,
   "workspaces": [
-    "apps/web",
-    "apps/api",
+    "apps/ecommerce-web-nextjs",
+    "apps/ecommerce-api-elysia",
     "packages/*"
   ],
   "scripts": {
-    "dev:web": "bun run --cwd apps/web dev",
-    "dev:api": "bun run --cwd apps/api dev",
+    "dev:web": "bun run --cwd apps/ecommerce-web-nextjs dev",
+    "dev:api": "bun run --cwd apps/ecommerce-api-elysia dev",
+    "dev:mobile": "bun run --cwd apps/ecommerce-mob-expo/ecommerce-app start",
     "db:generate": "bun run --cwd packages/database prisma generate",
     "db:migrate": "bun run --cwd packages/database prisma migrate dev",
     "db:validate": "bun run --cwd packages/database prisma validate",

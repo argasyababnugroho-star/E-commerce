@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
-  { href: "/products?category=electronics", label: "Electronics" },
-  { href: "/products?category=fashion", label: "Fashion" },
+  { href: "/orders", label: "Orders" },
+  { href: "/admin", label: "Admin" },
 ];
 
 interface NavbarProps {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Zap, Github, Twitter, Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Zap, Globe, Link2, Share2, MessageSquare, Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
   shop: [
@@ -26,10 +26,10 @@ const footerLinks = {
 };
 
 const socials = [
-  { Icon: Twitter, href: "#", label: "Twitter" },
-  { Icon: Instagram, href: "#", label: "Instagram" },
-  { Icon: Facebook, href: "#", label: "Facebook" },
-  { Icon: Github, href: "#", label: "GitHub" },
+  { Icon: MessageSquare, href: "#", label: "Community" },
+  { Icon: Share2, href: "#", label: "Social" },
+  { Icon: Link2, href: "#", label: "Connect" },
+  { Icon: Globe, href: "#", label: "Website" },
 ];
 
 export function Footer() {
@@ -123,7 +123,7 @@ export function Footer() {
         {/* Bottom section */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Nexbuy. All rights reserved.
+            © 2026 Nexbuy. All rights reserved.
           </p>
 
           {/* Social Links */}
