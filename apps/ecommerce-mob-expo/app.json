@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "ecommerce-app",
-    "slug": "ecommerce-app",
+    "name": "ecommerce-mob-expo",
+    "slug": "ecommerce-mob-expo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "ecommerceapp",
+    "scheme": "ecommercemobexpo",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
